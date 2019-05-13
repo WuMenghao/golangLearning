@@ -12,4 +12,8 @@ package myPackage
 	2.main包包含可执行的入口
 	3.为struct 定义的 func 必须放在同一个 package 中
 	4.package可以包含多个文件
+
+三、扩展
+	如何扩充系统类型或者别人的类型
+	1.使用别名 2.使用组合
 */

@@ -36,4 +36,9 @@ func main() {
 
 	//函数调用
 	root.Traverse()
+	fmt.Println()
+
+	//扩展，后序遍历
+	myTreeNode := myPackage.MyTreeNode{&root}
+	myTreeNode.PostOrder()
 }
