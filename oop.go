@@ -37,7 +37,7 @@ func createTreeNode(value int) *TreeNode {
 }
 
 //func 定义 有接收者
-func (node TreeNode) print() {
+func (node *TreeNode) print() {
 	fmt.Println(node.value)
 }
 
@@ -50,7 +50,7 @@ func (node *TreeNode) setValue(value int) {
 }
 
 func (node *TreeNode) traverse() {
-	if node != nil {
+	if node == nil {
 		return
 	}
 	node.left.traverse()
@@ -89,5 +89,6 @@ func main() {
 	var npRoot *TreeNode
 	npRoot.setValue(100) //panic: runtime error: invalid memory address or nil pointer dereference
 
+	//函数调用
 	root.traverse()
 }
